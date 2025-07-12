@@ -6,8 +6,6 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
-[Clicky here](./https://www.youtube.com/watch?v=VlV63e-cwnE).
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VlV63e-cwnE?si=iNM5ovBF5dcNWN2V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
