@@ -1,8 +1,3 @@
 theme: jekyll-theme-minimal
-author: 
-  name: Maya Gomez Name
 title: Maya Gomez
 description: PhD Candidate, Cnidarian Evolutionary Ecology Lab, University of Southern California
-email: migomez@usc.edu
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: "/another-page"
