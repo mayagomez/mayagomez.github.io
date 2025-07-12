@@ -1,3 +1,3 @@
-# mayagomez.github.io
+# I am going to attempt to build a website! 
 
-### I am going to attempt to build a website!
+### Wish me luck.
