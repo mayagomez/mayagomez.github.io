@@ -275,19 +275,6 @@ input, select, textarea {
 		}
 
 
-	.video-container {
-		width: 100%;
-		margin: 0;
-		aspect-ratio: 16 / 9;
-	}
-
-	.video-container iframe {
-		display: block;
-		width: 100%;
-		height: 100%;
-		border: 0;
-	}
-
 /* Row */
 
 	.row {
@@ -3149,4 +3136,40 @@ input, select, textarea {
 						margin-bottom: 2em;
 					}
 
+
+/* MY MODIFICATIONS */
+
+/* Format YouTube videos to fill screen on mobile and webpage */
+
+	.video-container {
+		width: 100%;
+		margin: 0;
+		aspect-ratio: 16 / 9;
+	}
+
+	.video-container iframe {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+
+/* Remove whitespace beneath the Micro CT carousel */
+	#uct-carousel {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	#uct-carousel article {
+		padding-bottom: 0;
+	}
+
+	#uct-carousel article .image {
+		margin-bottom: 0;
+	}
+
+	#uct-carousel article .image img {
+		display: block;
+	}
+		
 	}
