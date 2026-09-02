@@ -145,25 +145,25 @@
 					lightbox.innerHTML = '<img src="" alt="Enlarged Micro-CT image">';
 				document.body.appendChild(lightbox);
 
-				document.querySelectorAll("#uct-carousel a.image").forEach(function(link) {
-					link.addEventListener("click", function(event) {
-						event.preventDefault();
-						lightbox.querySelector("img").src = link.href;
-						lightbox.classList.add("open");
-					});
-				});
+				document.addEventListener("click", function(event) {
+					const link = event.target.closest("#uct-carousel a.image");
+					if (!link) return;
+					event.preventDefault();
+					event.stopImmediatePropagation();
+					lightbox.querySelector("img").src = link.href;
+					lightbox.classList.add("open");
+				}, true);
 
-				lightbox.addEventListener("click", function() {
+					lightbox.addEventListener("click", function() {
 					lightbox.classList.remove("open");
 					lightbox.querySelector("img").src = "";
-					});
+				});
 
 				document.addEventListener("keydown", function(event) {
-					if (event.key === "Escape" && lightbox.classList.contains("open")) {
-					lightbox.click();
-					}
+				if (event.key === "Escape" && lightbox.classList.contains("open")) lightbox.click();
 				});
 			});
+
 </script>
 
 	</body>
