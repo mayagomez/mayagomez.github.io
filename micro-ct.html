@@ -50,11 +50,11 @@
 					<div class="reel">
 
 						<article>
-							<a href="#" class="image featured"><img src="images/uCT/1-DSC00210-2-Enhanced-NR.jpg" alt="" /></a>
+							<a href="images/uCT/1-DSC00210-2-Enhanced-NR.jpg" class="image featured"><img src="images/uCT/1-DSC00210-2-Enhanced-NR.jpg" alt="" /></a>
 						</article>
 						
 						<article>
-							<a href="#" class="image featured"><img src="images/uCT/1-A_photoshoot.jpg" alt="" /></a>
+							<a href="images/uCT/1-A_photoshoot.jpg" class="image featured"><img src="images/uCT/1-A_photoshoot.jpg" alt="" /></a>
 						</article>
 						
 						<article>
@@ -137,6 +137,36 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					const lightbox = document.createElement("div");
+					lightbox.id = "uct-lightbox";
+					lightbox.innerHTML = '<img src="" alt="Enlarged Micro-CT image">';
+				document.body.appendChild(lightbox);
+
+				document.querySelectorAll("#uct-carousel a.image").forEach(function(link) {
+					link.addEventListener("click", function(event) {
+						event.preventDefault();
+						lightbox.querySelector("img").src = link.href;
+						lightbox.classList.add("open");
+					});
+				});
+
+				lightbox.addEventListener("click", function() {
+					lightbox.classList.remove("open");
+					lightbox.querySelector("img").src = "";
+					});
+
+				document.addEventListener("keydown", function(event) {
+					if (event.key === "Escape" && lightbox.classList.contains("open")) {
+					lightbox.click();
+					}
+				});
+			});
+</script>
+
+	</body>
 
 	</body>
 </html>
