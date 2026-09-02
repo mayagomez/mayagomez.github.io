@@ -3171,5 +3171,34 @@ input, select, textarea {
 	#uct-carousel article .image img {
 		display: block;
 	}
-		
+
+/* Micro-CT image lightbox */
+	#uct-lightbox {
+		display: none;
+		position: fixed;
+		z-index: 10000;
+		inset: 0;
+		padding: 2em;
+		background: rgba(0, 0, 0, 0.9);
+		align-items: center;
+		justify-content: center;
+		cursor: zoom-out;
 	}
+
+	#uct-lightbox.open {
+		display: flex;
+	}
+
+	#uct-lightbox img {
+		display: block;
+		max-width: 100%;
+		max-height: 90vh;
+		object-fit: contain;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	}
+
+	#uct-carousel img {
+		cursor: zoom-in;
+	}
+
+}
