@@ -2637,6 +2637,10 @@ input, select, textarea {
 		border: 0;
 	}
 
+	hr.mobile-divider {
+		display: none;
+	}
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -2783,6 +2787,14 @@ input, select, textarea {
 				margin-bottom: 6em;
 			}
 
+			hr.mobile-divider {
+				display: block;
+			}
+
+			.wonderkids-card {
+				margin-top: 2em;
+			}
+
 		/* Section/Article */
 
 			section, article {
@@ -2870,6 +2882,11 @@ input, select, textarea {
 				padding: 0;
 				line-height: 3em;
 				width: 100%;
+			}
+
+			.button.take-action-button {
+				line-height: 1.4em;
+				padding: 0.75em 1em;
 			}
 
 		/* Nav */
