@@ -2675,6 +2675,11 @@ input, select, textarea {
 		padding-bottom: 5em;
 	}
 
+	.research-video {
+		max-width: 56em;
+		margin: 0 auto;
+	}
+
 	.carousel .scale-cards article {
 		flex: 1 1 0;
 		min-width: 0;
