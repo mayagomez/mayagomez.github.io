@@ -2177,7 +2177,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		background-image: url("../../images/branch_P6210889.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2647,6 +2647,74 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	#uct-carousel article {
+		padding-bottom: 0;
+	}
+
+	#uct-carousel article .image {
+		margin-bottom: 0;
+	}
+
+	#uct-carousel article .image img {
+		display: block;
+	}
+
+	.carousel .scale-cards {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 2em;
+		padding: 0 2em;
+		overflow-x: auto;
+	}
+
+	.scale-carousel {
+		background: #f0f4f4;
+	}
+
+	.research-intro {
+		padding-bottom: 5em;
+	}
+
+	.carousel .scale-cards article {
+		flex: 1 1 0;
+		min-width: 0;
+		margin-right: 0;
+		padding-bottom: 1em;
+	}
+
+	.carousel .scale-cards article .image {
+		margin-bottom: 1em;
+	}
+
+	.carousel .scale-cards article header {
+		margin-bottom: 0;
+	}
+
+	.social-link-images .image {
+		aspect-ratio: 1 / 1;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	.social-link-images .image img {
+		aspect-ratio: 1 / 1;
+		border-radius: 0;
+		object-fit: cover;
+	}
+
+	.social-link-images .image img.branch-social-image {
+		object-position: 100% 0%;
+		transform: scale(1.2) translateY(-15%);
+		transform-origin: top right;
+	}
+
+	.social-link-images > .col-8 {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		text-align: left;
+	}
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -2799,6 +2867,14 @@ input, select, textarea {
 
 			.wonderkids-card {
 				margin-top: 2em;
+			}
+
+			.carousel .scale-cards article {
+				flex: 0 0 14em;
+			}
+
+			.research-intro {
+				padding-bottom: 2em;
 			}
 
 		/* Section/Article */
@@ -3183,18 +3259,6 @@ input, select, textarea {
 	#uct-carousel {
 		padding-bottom: 0;
 		margin-bottom: 0;
-	}
-
-	#uct-carousel article {
-		padding-bottom: 0;
-	}
-
-	#uct-carousel article .image {
-		margin-bottom: 0;
-	}
-
-	#uct-carousel article .image img {
-		display: block;
 	}
 
 /* Micro-CT image lightbox */
