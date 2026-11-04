@@ -2641,12 +2641,6 @@ input, select, textarea {
 		display: none;
 	}
 
-	.development-notice {
-		color: #c62828;
-		font-weight: bold;
-		text-align: center;
-	}
-
 	#uct-carousel article {
 		padding-bottom: 0;
 	}
@@ -2678,6 +2672,32 @@ input, select, textarea {
 	.research-video {
 		max-width: 56em;
 		margin: 0 auto;
+	}
+
+	.action-point-image {
+		display: block;
+		width: 100%;
+		max-width: 40em;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		margin: 1.5em auto 0;
+	}
+
+	.use-your-voice-image {
+		object-position: center 45%;
+	}
+
+	.donate-image {
+		object-position: center 75%;
+	}
+
+	.action-page-meta {
+		margin-top: 3em;
+		text-align: center;
+	}
+
+	.action-page-meta p {
+		text-align: center;
 	}
 
 	.carousel .scale-cards article {
