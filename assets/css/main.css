@@ -2691,6 +2691,44 @@ input, select, textarea {
 
 	.action-page-title {
 		font-weight: 700;
+		margin-bottom: 1.5em;
+	}
+
+	.action-steps {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 38em));
+		gap: 2em;
+		align-items: stretch;
+		justify-content: center;
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		padding: 2em max(2em, calc((100vw - 78em) / 2));
+		background: #f0f4f4;
+	}
+
+	.action-steps > section {
+		margin: 0;
+		padding: 2em;
+		border: 0;
+		border-radius: 0;
+		background: #fff;
+		box-shadow: none;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	@media (hover: hover) {
+		.action-steps > section:hover {
+			transform: translateY(-0.2em);
+			box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.08);
+		}
+	}
+
+	.action-steps > section:nth-child(5) {
+		grid-column: 1 / -1;
+	}
+
+	.action-steps > section header {
+		margin-bottom: 1em;
 	}
 
 	.use-your-voice-image {
@@ -2916,6 +2954,16 @@ input, select, textarea {
 				width: 100%;
 				max-width: none;
 				margin: 1em auto 2em;
+			}
+
+			.action-steps {
+				display: block;
+				padding: 1em;
+			}
+
+			.action-steps > section {
+				margin-bottom: 2em;
+				padding: 1.5em;
 			}
 
 		/* Section/Article */
