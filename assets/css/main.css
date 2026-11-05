@@ -2674,13 +2674,23 @@ input, select, textarea {
 		margin: 0 auto;
 	}
 
-	.action-point-image {
+	.image.featured.action-point-image {
 		display: block;
 		width: 100%;
 		max-width: 40em;
 		aspect-ratio: 16 / 9;
-		object-fit: cover;
+		overflow: hidden;
 		margin: 1.5em auto 0;
+	}
+
+	.action-point-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.action-page-title {
+		font-weight: 700;
 	}
 
 	.use-your-voice-image {
@@ -2900,6 +2910,12 @@ input, select, textarea {
 
 			.research-intro {
 				padding-bottom: 2em;
+			}
+
+			.image.featured.action-point-image {
+				width: 75%;
+				max-width: 18em;
+				margin: 1em auto 2em;
 			}
 
 		/* Section/Article */
