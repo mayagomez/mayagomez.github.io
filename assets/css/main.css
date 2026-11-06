@@ -2696,13 +2696,13 @@ input, select, textarea {
 
 	.action-steps {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 38em));
+		grid-template-columns: repeat(2, minmax(0, 34em));
 		gap: 2em;
 		align-items: stretch;
 		justify-content: center;
 		width: 100vw;
 		margin-left: calc(50% - 50vw);
-		padding: 2em max(2em, calc((100vw - 78em) / 2));
+		padding: 2em max(2em, calc((100vw - 70em) / 2));
 		background: #f0f4f4;
 	}
 
