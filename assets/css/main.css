@@ -2731,6 +2731,21 @@ input, select, textarea {
 		margin-bottom: 1em;
 	}
 
+	.action-step-number {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 3rem;
+		height: 3rem;
+		margin: 0.25em auto 1.25em;
+		border-radius: 50%;
+		background: #ef8376;
+		color: #fff;
+		font-size: 1.5em;
+		font-weight: 700;
+		line-height: 1;
+	}
+
 	.use-your-voice-image {
 		object-position: center 45%;
 	}
