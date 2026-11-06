@@ -2694,21 +2694,25 @@ input, select, textarea {
 		margin-bottom: 1.5em;
 	}
 
+	.action-title-emphasis {
+		font-weight: 900;
+	}
+
 	.action-steps {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 34em));
+		grid-template-columns: repeat(2, minmax(0, 30em));
 		gap: 2em;
 		align-items: stretch;
 		justify-content: center;
 		width: 100vw;
 		margin-left: calc(50% - 50vw);
-		padding: 2em max(2em, calc((100vw - 70em) / 2));
+		padding: 2em max(2em, calc((100vw - 62em) / 2));
 		background: #f0f4f4;
 	}
 
 	.action-steps > section {
 		margin: 0;
-		padding: 2em;
+		padding: 1.5em;
 		border: 0;
 		border-radius: 0;
 		background: #fff;
@@ -2737,7 +2741,7 @@ input, select, textarea {
 		justify-content: center;
 		width: 3rem;
 		height: 3rem;
-		margin: 0.25em auto 1.25em;
+		margin: 0.75em auto 1.25em;
 		border-radius: 50%;
 		background: #ef8376;
 		color: #fff;
