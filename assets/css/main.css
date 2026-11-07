@@ -2686,7 +2686,8 @@ input, select, textarea {
 	.action-point-image img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: contain;
+		object-position: center;
 	}
 
 	.action-page-title {
@@ -2752,14 +2753,6 @@ input, select, textarea {
 		font-size: 1.5em;
 		font-weight: 700;
 		line-height: 1;
-	}
-
-	.use-your-voice-image {
-		object-position: center 45%;
-	}
-
-	.donate-image {
-		object-position: center 75%;
 	}
 
 	.action-page-meta {
