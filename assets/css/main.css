@@ -2731,6 +2731,10 @@ input, select, textarea {
 		grid-column: 1 / -1;
 	}
 
+	.action-steps > section:nth-child(5) .action-point-image {
+		max-width: none;
+	}
+
 	.action-steps > section header {
 		margin-bottom: 1em;
 	}
@@ -2755,7 +2759,7 @@ input, select, textarea {
 	}
 
 	.donate-image {
-		object-position: center 25%;
+		object-position: center 75%;
 	}
 
 	.action-page-meta {
