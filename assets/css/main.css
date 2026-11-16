@@ -2771,8 +2771,9 @@ input, select, textarea {
 		line-height: 1;
 	}
 
-	.action-page-meta {
-		margin-top: 3em;
+	#main section.action-page-meta {
+		margin: 0;
+		padding: 2.25em 0;
 		text-align: center;
 	}
 
@@ -2993,7 +2994,7 @@ input, select, textarea {
 			.image.featured.action-point-image {
 				width: 100%;
 				max-width: none;
-				margin: 1em auto 2em;
+				margin: 1em auto 0;
 			}
 
 			.action-steps {
@@ -3004,6 +3005,16 @@ input, select, textarea {
 			.action-steps > section {
 				margin-bottom: 2em;
 				padding: 1.5em;
+			}
+
+			.take-action-page #main section.action-page-meta {
+				margin: 0;
+				padding: 2.25em 0;
+			}
+
+			.take-action-page .wrapper.style1 {
+				margin-bottom: 0;
+				padding-bottom: 0;
 			}
 
 		/* Section/Article */
